@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    overflow: hidden;
+    flex-direction: column;
+}
+.wrap__basket{
+    width: 32%;
+    height: 100vh;
+    background-color: #000;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    margin-right: -670px;
+    padding: 0 50px;
+    padding-top: 50px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.basket__btn{
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/bar-chart.png);
+    background-size: cover;
+}
+.wrap__basket__row{
+    width: 100%;
+    height: min-content;
+    display: flex;
+}
+.wrap__basket__row_cancel{
+justify-content: end;
+
+}
+.wrap__basket__cancel{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/multiply.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.wrap__basket__cancel:hover{
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+.wrap__basket__header{
+    color: #555;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+    font-family: monospace;
+}
+.main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wrap__item{
+    margin: 30px 30px;
+    width: 400px;
+    height: 480px;
+    border: 1px solid #fff;
+    border-radius: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__img{
+    width: 70%;
+    border-radius: 10px;
+    height: 75%;
+    background-image: url(../img/iphone14.png);
+    background-size: cover;
+    background-position: 50%;
+    margin-bottom: 30px;
+}
+.item__row{
+    width: 100%;
+    min-width: 100px;
+    display: flex;
+    padding: 0 50px;
+}
+.item__left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.item__right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.item__price{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+}
+.item__buyBtn{
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.item__toBasketBtn{
+    
+    width: 100px;
+    height: 40px;
+    border: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.item__name{
+    color: #fff;
+    font-family: monospace;
+    font-size: 30px;
+    margin-top: -30px;
+    margin-bottom:15px;
+}
+.basket__item{
+    width: 90%;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.basket__item__img{
+    width: 60%;
+    height: 90%;
+    background-image: url(../img/iphone10.png);
+    background-size: cover;
+}
+.basket__item__row{
+   justify-content: center;
+    width: 35%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.basket__item__name{
+    color: #fff;
+    font-family: monospace;
+    font-size: 26px;
+}
+.basket__item__btn{
+    width: 80%;
+    height: 45px;
+    border-radius: 5px ;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: monospace;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.basket__item__btn:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.4s;
+
+}
+.tgPopup{
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 0%;
+    top: 10%;
+    margin-left: -300px;
+    transition: 0.5s;
+    background-color: #555;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+}
+.tgPopup__img{
+    background-image: url(../img/telegram.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+.tgPopup__text{
+    color: blue;
+    font-size: 15px;
+    font-family: monospace;
+}
+.tgPopup__row{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+a{
+    text-decoration: none;
+}
